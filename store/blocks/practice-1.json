@@ -1,0 +1,91 @@
+{
+    "store.custom#practice-1": {
+        "blocks": [
+            "category-menu",
+            "flex-layout.row#info-top",
+            "flex-layout.row#banner-1"
+        ]
+    },
+    "flex-layout.row#info-top" : {
+        "children" : [
+            "flex-layout.col#info-top-col-1",
+            "flex-layout.col#info-top-col-2",
+            "flex-layout.col#info-top-col-3"
+        ],
+        "title" : "Información promocional",
+        "props" : {
+            "fullWidth": false,
+            "blockClass" : "row-promocional"
+        }
+    },
+    "flex-layout.col#info-top-col-1" : {
+        "children" : [
+            "image#infto-top-img1"
+        ],
+        "props" : {
+            "blockClass" : "info-top-col"
+        }
+    },
+    "flex-layout.col#info-top-col-2" : {
+        "children" : [
+            "image#infto-top-img2"
+        ],
+        "props" : { 
+            "blockClass" : "info-top-col"
+        }
+    },
+    "flex-layout.col#info-top-col-3" : {
+        "children" : [
+            "image#infto-top-img3"
+        ],
+        "props" : {
+            "blockClass" : "info-top-col"
+        }
+    },
+    "flex-layout.row#banner-1" : {
+        "children" : [
+            "image#primary-banner"
+        ],
+        "title" : "Contenedor banner principal" 
+    },
+    "image#infto-top-img1" : {
+        "props": {
+            "src": "assets/referidos.png",
+            "maxHeight": "100px",
+            "blockClass" : "img-info-promocional"
+        }
+    },
+    "image#infto-top-img2" : {
+        "props": {
+            "src": "assets/envios.png",
+            "maxHeight": "100px",
+            "blockClass" : "img-info-promocional"
+        }
+    },
+    "image#infto-top-img3" : {
+        "props": {
+            "src": "assets/devoluciones.png",
+            "maxHeight": "100px",
+            "blockClass" : "img-info-promocional"
+        }
+    },
+    
+    "category-menu": {
+        "props": {
+          "showAllDepartments": true,
+          "showSubcategories": true,
+          "menuDisposition": "center",
+          "departments": [],
+          "sortSubcategories": "name"
+        }
+    },
+    
+    "image#primary-banner": {
+        "props": {
+            "src": "assets/banner-primary.png",
+            "maxHeight": "500px",
+            "blockClass" : "primary-banner"
+        }
+       
+    }
+}
